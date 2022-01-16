@@ -2,29 +2,41 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 5vh;
+  align-items: center;
+  margin-top: 7vh;
 }
 
-#clear-btn {
+button {
   background-color: #d3eafc;
-  align-self: flex-start;
-  margin: 8px 0;
+  width: 130px;
+  margin-top: 14px;
   border: none;
   padding: 8px 28px;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #31a6f9;
+}
+button:active {
+  transform: scale(1.05);
 }
 
 .grid {
-  display: grid;
+  height: 480px;
   width: 480px;
-  grid-template-columns: repeat(4, 120px);
-  grid-template-rows: repeat(4, 120px);
+  background-color: #d3eafc;
+  border: 1px solid #;
 }
 
 .tile {
   background-color: #d3eafc;
   border: 1px solid #2196f3;
-  /* padding: 20px;
-  font-size: 30px; */
   text-align: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 47px;
 }
